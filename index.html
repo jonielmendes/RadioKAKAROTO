@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rádio KAKAROTO - Ao Vivo</title>
+    <meta name="description" content="Ouça a Rádio KAKAROTO ao vivo! A melhor programação 24h com os ritmos que agitam o Brasil. Stream ao vivo, programação semanal, locutores e muito mais!">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><path fill=%22%23007bff%22 d=%22M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z%22/><path fill=%22%23007bff%22 d=%22m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z%22/></svg>">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><path fill=%22%23007bff%22 d=%22M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z%22/><path fill=%22%23007bff%22 d=%22m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z%22/></svg>">
+    
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link visually-hidden-focusable btn btn-primary position-absolute top-0 start-0 m-3">Pular para o conteúdo</a>
+
+    <!-- Navbar Bootstrap Corrigida -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+                <span class="badge bg-light text-primary rounded-circle p-2 me-2">
+                    <i class="bi bi-broadcast fs-5"></i>
+                </span>
+                KAKAROTO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">
+                            <i class="bi bi-house-fill me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programacao.html">
+                            <i class="bi bi-calendar-week me-1"></i>Programação
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="locutores.html">
+                            <i class="bi bi-mic me-1"></i>Locutores
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="podcasts.html">
+                            <i class="bi bi-headphones me-1"></i>Podcasts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">
+                            <i class="bi bi-newspaper me-1"></i>Notícias
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">
+                            <i class="bi bi-chat-dots me-1"></i>Contato
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">
+                            <i class="bi bi-info-circle me-1"></i>Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="politica-privacidade.html">
+                            <i class="bi bi-shield-check me-1"></i>Privacidade
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light btn-sm me-2" type="button" data-bs-toggle="modal" data-bs-target="#playerModal">
+                        <i class="bi bi-play-circle me-1"></i>Ouvir Agora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO COM VÍDEO (mantido exatamente como estava) -->
+    <section class="hero-section text-center" id="main-content">
+        <video autoplay loop muted playsinline class="hero-video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="hero-icon mx-auto mb-4">
+                        <i class="bi bi-broadcast display-4 text-white"></i>
+                    </div>
+                    <h1 class="display-1 fw-bold mb-3">RÁDIO <span class="d-block hero-title-gradient">KAKAROTO</span></h1>
+                    <p class="lead fs-4 mb-4">Sua rádio online favorita</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLAYER LATERAL com caminho correto para a pasta audio -->
+        <div class="caixa-player-moderna">
+            <div class="d-flex align-items-center mb-3">
+                <div class="icone-player me-3">
+                    <i class="bi bi-broadcast"></i>
+                </div>
+                <div class="flex-grow-1">
+                    <h6 class="mb-0 text-uppercase fw-bold status-player">AO VIVO</h6>
+                    <small class="text-muted">Rádio KAKAROTO</small>
+                </div>
+                <div class="indicador-ao-vivo">
+                    <span class="ponto-ao-vivo"></span>
+                </div>
+            </div>
+            
+            <div class="tocando-agora mb-3">
+                <h6 class="mb-1 fw-bold text-truncate">Hashtag Forró Boys</h6>
+                <p class="mb-0 text-muted small text-truncate">Grupo Forró Boys Oficial</p>
+            </div>
+            
+            <!-- Áudio com caminho correto para pasta audio -->
+            <audio class="w-100 mb-2" controls preload="none">
+                <source src="audio/grupoforroboysoficial-hashtag-forro-boys-b12c3e92.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+                <a href="audio/grupoforroboysoficial-hashtag-forro-boys-b12c3e92.mp3">Ouça aqui</a>.
+            </audio>
+            
+            <div class="d-flex justify-content-between align-items-center text-muted small">
+                <span><i class="bi bi-music-note me-1"></i>Forró</span>
+                <span><i class="bi bi-people me-1"></i>124 ouvintes</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTAQUES com Bootstrap melhorado -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary fs-6 mb-3">
+                    <i class="bi bi-star me-2"></i>DESTAQUES
+                </span>
+                <h2 class="display-5 fw-bold">Destaques do Dia</h2>
+                <p class="lead text-muted">Fique por dentro do que está rolando na rádio.</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-lg border-0">
+                        <img src="img/expo.jpg" class="card-img-top" alt="Banner da ExpoCorrente" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-primary mb-2 align-self-start">EVENTO</span>
+                            <h5 class="card-title fw-bold">Cobertura da ExpoCorrente</h5>
+                            <p class="card-text flex-grow-1">Nossa equipe faz a cobertura completa da ExpoCorrente! Ouça flashes ao vivo direto do evento e saiba de tudo que está acontecendo.</p>
+                            <div class="mt-auto">
+                                <div class="btn-group w-100" role="group">
+                                    <button type="button" class="btn btn-outline-primary">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary flex-grow-1">
+                                        <i class="bi bi-play me-2"></i>Ouvir Cobertura
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-lg border-0">
+                        <img src="img/image.png" class="card-img-top" alt="Sanfona representando o forró" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-warning mb-2 align-self-start">ESPECIAL</span>
+                            <h5 class="card-title fw-bold">Especial Clássicos do Forró</h5>
+                            <p class="card-text flex-grow-1">Hoje, a partir das 15h, uma hora inteira só com o melhor do forró das antigas que marcou época. Prepare o coração e aumente o som!</p>
+                            <div class="mt-auto">
+                                <div class="btn-group w-100" role="group">
+                                    <button type="button" class="btn btn-outline-warning">
+                                        <i class="bi bi-clock"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-warning flex-grow-1">
+                                        <i class="bi bi-music-note me-2"></i>15h - Não Perca!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-lg border-0">
+                        <img src="img/image3.png" class="card-img-top" alt="Prêmio de sorteio da rádio" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-success mb-2 align-self-start">SORTEIO</span>
+                            <h5 class="card-title fw-bold">Sorteio Relâmpago</h5>
+                            <p class="card-text flex-grow-1">Fique ligado! A qualquer momento vamos sortear um super prêmio. Para participar, anote a "senha do dia" e mande para o nosso WhatsApp!</p>
+                            <div class="mt-auto">
+                                <div class="btn-group w-100" role="group">
+                                    <button type="button" class="btn btn-outline-success">
+                                        <i class="bi bi-gift"></i>
+                                    </button>
+                                    <a href="contato.html" class="btn btn-success flex-grow-1">
+                                        <i class="bi bi-whatsapp me-2"></i>Participar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seções com Tabs Bootstrap -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-success fs-6 mb-3">
+                    <i class="bi bi-calendar-check me-2"></i>PROGRAMAÇÃO
+                </span>
+                <h2 class="display-5 fw-bold">O que está rolando</h2>
+                <p class="lead text-muted">Fique por dentro de tudo que acontece na KAKAROTO</p>
+            </div>
+
+            <ul class="nav nav-pills nav-fill justify-content-center mb-4" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-hoje-tab" data-bs-toggle="pill" data-bs-target="#pills-hoje" 
+                            type="button" role="tab" aria-controls="pills-hoje" aria-selected="true">
+                        <i class="bi bi-calendar-day me-2"></i>Hoje
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-noticias-tab" data-bs-toggle="pill" data-bs-target="#pills-noticias" 
+                            type="button" role="tab" aria-controls="pills-noticias" aria-selected="false">
+                        <i class="bi bi-newspaper me-2"></i>Notícias
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-podcasts-tab" data-bs-toggle="pill" data-bs-target="#pills-podcasts" 
+                            type="button" role="tab" aria-controls="pills-podcasts" aria-selected="false">
+                        <i class="bi bi-headphones me-2"></i>Podcasts
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="pills-tabContent">
+                <!-- Programação de Hoje -->
+                <div class="tab-pane fade show active" id="pills-hoje" role="tabpanel" aria-labelledby="pills-hoje-tab">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge bg-primary rounded-pill me-2 fs-6">06:00</span>
+                                        <h6 class="mb-0 fw-bold">Bom Dia KAKAROTO</h6>
+                                    </div>
+                                    <p class="small text-muted mb-2">
+                                        <i class="bi bi-person me-1"></i>Com João Silva
+                                    </p>
+                                    <p class="small">Desperte com alegria! Notícias, música e muito bom humor.</p>
+                                    <span class="badge bg-success">Em Breve</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm border-success">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge bg-success rounded-pill me-2 fs-6">10:00</span>
+                                        <h6 class="mb-0 fw-bold">Clássicos do Forró</h6>
+                                    </div>
+                                    <p class="small text-muted mb-2">
+                                        <i class="bi bi-person me-1"></i>Com Maria Santos
+                                    </p>
+                                    <p class="small">Os grandes sucessos do forró que marcaram gerações.</p>
+                                    <span class="badge bg-danger">
+                                        <i class="bi bi-broadcast me-1"></i>NO AR
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge bg-warning rounded-pill me-2 fs-6">14:00</span>
+                                        <h6 class="mb-0 fw-bold">Tarde de Sucessos</h6>
+                                    </div>
+                                    <p class="small text-muted mb-2">
+                                        <i class="bi bi-person me-1"></i>Com Pedro Costa
+                                    </p>
+                                    <p class="small">A melhor seleção musical para sua tarde.</p>
+                                    <span class="badge bg-secondary">Próximo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Outras abas -->
+                <div class="tab-pane fade" id="pills-noticias" role="tabpanel" aria-labelledby="pills-noticias-tab">
+                    <div class="text-center">
+                        <p class="lead">Veja as últimas notícias de Corrente-PI</p>
+                        <a href="noticias.html" class="btn btn-primary btn-lg">
+                            <i class="bi bi-newspaper me-2"></i>Ver Todas as Notícias
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="pills-podcasts" role="tabpanel" aria-labelledby="pills-podcasts-tab">
+                    <div class="text-center">
+                        <p class="lead">Ouça nossos podcasts exclusivos</p>
+                        <a href="podcasts.html" class="btn btn-success btn-lg">
+                            <i class="bi bi-headphones me-2"></i>Ouvir Podcasts
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h3 class="fw-bold mb-3">
+                        <i class="bi bi-heart-fill text-warning me-2"></i>
+                        Faça Parte da Família KAKAROTO
+                    </h3>
+                    <p class="lead mb-4">Participe dos nossos programas e envie suas sugestões!</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="contato.html" class="btn btn-light btn-lg">
+                            <i class="bi bi-chat-dots me-2"></i>Entre em Contato
+                        </a>
+                        <a href="#" class="btn btn-success btn-lg">
+                            <i class="bi bi-whatsapp me-2"></i>WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal do Player Bootstrap com caminho correto -->
+    <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="playerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="playerModalLabel">
+                        <i class="bi bi-broadcast me-2"></i>Player Rádio KAKAROTO
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="mb-4">
+                        <span class="badge bg-danger fs-6 mb-3">
+                            <i class="bi bi-circle-fill" style="font-size: 0.5rem;"></i>
+                            AO VIVO
+                        </span>
+                        <h4 class="fw-bold">Tocando Agora</h4>
+                        <p class="text-muted">Hashtag Forró Boys - Grupo Forró Boys Oficial</p>
+                    </div>
+                    <!-- Modal player com caminho correto -->
+                    <audio class="w-100" controls preload="none">
+                        <source src="audio/grupoforroboysoficial-hashtag-forro-boys-b12c3e92.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <div class="mt-3 d-flex justify-content-center gap-2 flex-wrap">
+                        <span class="badge bg-primary">Forró</span>
+                        <span class="badge bg-success">124 ouvintes</span>
+                        <span class="badge bg-warning">Popular</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3">
+                        <i class="bi bi-broadcast me-2"></i>Rádio KAKAROTO
+                    </h6>
+                    <p class="small">O ritmo do Brasil, ao vivo 24h. Sua rádio online favorita.</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3">Redes Sociais</h6>
+                    <div class="btn-group mb-3" role="group">
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <small>&copy; 2025 Rádio KAKAROTO. Todos os direitos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

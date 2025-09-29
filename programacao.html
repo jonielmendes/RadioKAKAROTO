@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação - Rádio KAKAROTO</title>
+    <meta name="description" content="Confira a grade de programação completa da semana na Rádio KAKAROTO. Programação semanal organizada em abas com os melhores programas e locutores.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Skip Link para Acessibilidade -->
+    <a href="#main-content" class="skip-link visually-hidden-focusable btn btn-primary position-absolute top-0 start-0 m-3">Pular para o conteúdo</a>
+
+    <!-- Navbar Bootstrap Completa -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+                <span class="badge bg-light text-primary rounded-circle p-2 me-2">
+                    <i class="bi bi-broadcast fs-5"></i>
+                </span>
+                KAKAROTO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-fill me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="programacao.html">
+                            <i class="bi bi-calendar-week me-1"></i>Programação
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="locutores.html">
+                            <i class="bi bi-mic me-1"></i>Locutores
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="podcasts.html">
+                            <i class="bi bi-headphones me-1"></i>Podcasts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">
+                            <i class="bi bi-newspaper me-1"></i>Notícias
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">
+                            <i class="bi bi-chat-dots me-1"></i>Contato
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">
+                            <i class="bi bi-info-circle me-1"></i>Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="politica-privacidade.html">
+                            <i class="bi bi-shield-check me-1"></i>Privacidade
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light btn-sm me-2" type="button" data-bs-toggle="modal" data-bs-target="#playerModal">
+                        <i class="bi bi-play-circle me-1"></i>Ouvir Agora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Espaçamento para navbar fixa -->
+    <div style="height: 80px;"></div>
+
+    <!-- Hero Section Azul com Bootstrap -->
+    <div class="bg-primary text-white py-5 mb-5">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-light text-primary fs-6 mb-3">
+                        <i class="bi bi-calendar-event me-2"></i>PROGRAMAÇÃO SEMANAL
+                    </span>
+                    <h1 class="display-4 fw-bold mb-3">Nossa Programação</h1>
+                    <p class="lead mb-4">A trilha sonora perfeita para todos os momentos do seu dia. 24 horas de música, entretenimento e informação.</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <span class="badge bg-light text-primary p-2">
+                            <i class="bi bi-clock me-1"></i>24h no Ar
+                        </span>
+                        <span class="badge bg-light text-primary p-2">
+                            <i class="bi bi-music-note me-1"></i>7 Dias por Semana
+                        </span>
+                        <span class="badge bg-light text-primary p-2">
+                            <i class="bi bi-mic me-1"></i>Programas Ao Vivo
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" class="container-fluid py-5">
+        <div class="container">
+            <!-- Breadcrumb Bootstrap -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Programação</li>
+                </ol>
+            </nav>
+
+            <!-- Alert Bootstrap informativo -->
+            <div class="alert alert-info d-flex align-items-center mb-5" role="alert">
+                <i class="bi bi-info-circle-fill me-2"></i>
+                <div>
+                    <strong>Horários em GMT-3 (Brasília).</strong> Programação sujeita a alterações. Acompanhe nossa programação ao vivo!
+                </div>
+            </div>
+
+            <!-- Nav Pills Bootstrap -->
+            <ul class="nav nav-pills nav-fill justify-content-center mb-5" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active d-flex align-items-center justify-content-center" 
+                            id="pills-semana-tab" data-bs-toggle="pill" data-bs-target="#pills-semana" 
+                            type="button" role="tab" aria-controls="pills-semana" aria-selected="true">
+                        <i class="bi bi-calendar-week me-2"></i>
+                        <span class="d-none d-md-inline">Segunda a Sexta</span>
+                        <span class="d-md-none">Seg-Sex</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link d-flex align-items-center justify-content-center" 
+                            id="pills-sabado-tab" data-bs-toggle="pill" data-bs-target="#pills-sabado" 
+                            type="button" role="tab" aria-controls="pills-sabado" aria-selected="false">
+                        <i class="bi bi-calendar-day me-2"></i>Sábado
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link d-flex align-items-center justify-content-center" 
+                            id="pills-domingo-tab" data-bs-toggle="pill" data-bs-target="#pills-domingo" 
+                            type="button" role="tab" aria-controls="pills-domingo" aria-selected="false">
+                        <i class="bi bi-calendar-heart me-2"></i>Domingo
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <!-- Segunda a Sexta -->
+                <div class="tab-pane fade show active" id="pills-semana" role="tabpanel" aria-labelledby="pills-semana-tab">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-primary text-white">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="card-title mb-0">
+                                    <i class="bi bi-calendar-week me-2"></i>Segunda a Sexta
+                                </h4>
+                                <span class="badge bg-light text-primary fs-6">7 programas</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="list-group list-group-flush">
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-secondary rounded-pill fs-6">04:00</span>
+                                        <small class="d-block text-muted">06:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">Madrugadão KAKAROTO</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-person-circle me-1"></i>Corujão
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-secondary">Madrugada</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-primary btn-sm">
+                                                <i class="bi bi-info-circle"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item d-flex align-items-center bg-light">
+                                    <div class="me-3">
+                                        <span class="badge bg-warning rounded-pill fs-6">06:00</span>
+                                        <small class="d-block text-muted">09:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">Bom Dia KAKAROTO</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-person-circle me-1"></i>João Silva
+                                        </p>
+                                        <small class="text-success">
+                                            <i class="bi bi-broadcast me-1"></i>Programa mais ouvido
+                                        </small>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-warning">Manhã</span>
+                                        <div class="mt-1">
+                                            <div class="btn-group" role="group">
+                                                <button class="btn btn-outline-warning btn-sm">
+                                                    <i class="bi bi-heart"></i>
+                                                </button>
+                                                <button class="btn btn-outline-warning btn-sm">
+                                                    <i class="bi bi-share"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-info rounded-pill fs-6">09:00</span>
+                                        <small class="d-block text-muted">12:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">Clássicos do Forró</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-person-circle me-1"></i>Maria Santos
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-info">Musical</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-info btn-sm">
+                                                <i class="bi bi-music-note"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-danger rounded-pill fs-6">12:00</span>
+                                        <small class="d-block text-muted">13:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">Jornal do Meio-Dia</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-people me-1"></i>Equipe de Jornalismo
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-danger">Jornalismo</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-danger btn-sm">
+                                                <i class="bi bi-newspaper"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-success rounded-pill fs-6">13:00</span>
+                                        <small class="d-block text-muted">18:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">Tarde de Sucessos</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-person-circle me-1"></i>Pedro Costa
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-success">Hits</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-success btn-sm">
+                                                <i class="bi bi-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-dark rounded-pill fs-6">18:00</span>
+                                        <small class="d-block text-muted">19:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">A Voz do Brasil</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-flag me-1"></i>Governo Federal
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-dark">Oficial</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-dark btn-sm">
+                                                <i class="bi bi-broadcast"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-primary rounded-pill fs-6">19:00</span>
+                                        <small class="d-block text-muted">22:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">Noite Sertaneja</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-person-circle me-1"></i>Ana Lima
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-primary">Noite</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-primary btn-sm">
+                                                <i class="bi bi-moon-stars"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sábado -->
+                <div class="tab-pane fade" id="pills-sabado" role="tabpanel" aria-labelledby="pills-sabado-tab">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-success text-white">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="card-title mb-0">
+                                    <i class="bi bi-calendar-day me-2"></i>Sábado
+                                </h4>
+                                <span class="badge bg-light text-success fs-6">4 programas</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="list-group list-group-flush">
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-warning rounded-pill fs-6">08:00</span>
+                                        <small class="d-block text-muted">12:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">Sabadão Sertanejo</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-person-circle me-1"></i>Ana Lima
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-warning">Sertanejo</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-warning btn-sm">
+                                                <i class="bi bi-music-note-list"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-success rounded-pill fs-6">12:00</span>
+                                        <small class="d-block text-muted">16:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">Feijoada com Samba</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-person-circle me-1"></i>Carlos Mendes
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-success">Samba</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-success btn-sm">
+                                                <i class="bi bi-cup-hot"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-info rounded-pill fs-6">16:00</span>
+                                        <small class="d-block text-muted">20:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">Esquenta KAKAROTO</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-person-circle me-1"></i>DJ Max
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-info">Dance</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-info btn-sm">
+                                                <i class="bi bi-lightning"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-primary rounded-pill fs-6">20:00</span>
+                                        <small class="d-block text-muted">00:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">Festa no KAKAROTO</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-person-circle me-1"></i>DJ Max
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-primary">Festa</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-primary btn-sm">
+                                                <i class="bi bi-balloon"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Domingo -->
+                <div class="tab-pane fade" id="pills-domingo" role="tabpanel" aria-labelledby="pills-domingo-tab">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-warning text-white">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="card-title mb-0">
+                                    <i class="bi bi-calendar-heart me-2"></i>Domingo
+                                </h4>
+                                <span class="badge bg-light text-warning fs-6">3 programas</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="list-group list-group-flush">
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-light text-dark rounded-pill fs-6">08:00</span>
+                                        <small class="d-block text-muted">12:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">Domingo de Paz</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-people me-1"></i>Equipe KAKAROTO
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-light text-dark">Reflexão</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-secondary btn-sm">
+                                                <i class="bi bi-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-success rounded-pill fs-6">12:00</span>
+                                        <small class="d-block text-muted">18:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">Domingão do KAKAROTO</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-person-circle me-1"></i>João Silva
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-success">Família</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-success btn-sm">
+                                                <i class="bi bi-house-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item d-flex align-items-center">
+                                    <div class="me-3">
+                                        <span class="badge bg-primary rounded-pill fs-6">18:00</span>
+                                        <small class="d-block text-muted">22:00</small>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-bold">As Melhores da Semana</h6>
+                                        <p class="mb-0 text-muted small">
+                                            <i class="bi bi-person-circle me-1"></i>Pedro Costa
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-primary">Top Hits</span>
+                                        <div class="mt-1">
+                                            <button class="btn btn-outline-primary btn-sm">
+                                                <i class="bi bi-trophy"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action Bootstrap -->
+            <div class="text-center mt-5">
+                <div class="card border-0 bg-light shadow-sm">
+                    <div class="card-body p-5">
+                        <h4 class="fw-bold mb-3">
+                            <i class="bi bi-mic-fill text-primary me-2"></i>Quer participar dos nossos programas?
+                        </h4>
+                        <p class="text-muted mb-4">Ligue durante os programas ao vivo ou envie sua mensagem pelo WhatsApp!</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="tel:(89)3571-2345" class="btn btn-primary btn-lg">
+                                <i class="bi bi-telephone me-2"></i>(89) 3571-2345
+                            </a>
+                            <a href="#" class="btn btn-success btn-lg">
+                                <i class="bi bi-whatsapp me-2"></i>(89) 99999-8888
+                            </a>
+                            <a href="contato.html" class="btn btn-outline-primary btn-lg">
+                                <i class="bi bi-chat-dots me-2"></i>Fale Conosco
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal do Player Bootstrap -->
+    <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="playerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="playerModalLabel">
+                        <i class="bi bi-broadcast me-2"></i>Player Rádio KAKAROTO
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="mb-4">
+                        <span class="badge bg-danger fs-6 mb-3">
+                            <i class="bi bi-circle-fill" style="font-size: 0.5rem;"></i>
+                            AO VIVO
+                        </span>
+                        <h4 class="fw-bold">Programação 24h</h4>
+                        <p class="text-muted">Sua rádio favorita sempre no ar</p>
+                    </div>
+                    <div class="d-flex justify-content-center gap-2 flex-wrap">
+                        <span class="badge bg-primary">24h</span>
+                        <span class="badge bg-success">Ao Vivo</span>
+                        <span class="badge bg-warning">Música</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bootstrap -->
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3">
+                        <i class="bi bi-broadcast me-2"></i>Rádio KAKAROTO
+                    </h6>
+                    <p class="small">Sua rádio, sua música, sua vida. 24 horas no ar.</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3">Redes Sociais</h6>
+                    <div class="btn-group" role="group">
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <small>&copy; 2025 Rádio KAKAROTO. Todos os direitos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

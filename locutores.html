@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locutores - Rádio KAKAROTO</title>
+    <meta name="description" content="Conheça a equipe de locutores da Rádio KAKAROTO, as vozes que trazem o melhor conteúdo para você.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css"> 
+</head>
+<body>
+    <!-- Skip Link para Acessibilidade -->
+    <a href="#main-content" class="skip-link visually-hidden-focusable btn btn-primary position-absolute top-0 start-0 m-3">Pular para o conteúdo</a>
+
+    <!-- Navbar Bootstrap Completa -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+                <span class="badge bg-light text-primary rounded-circle p-2 me-2">
+                    <i class="bi bi-broadcast fs-5"></i>
+                </span>
+                KAKAROTO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-fill me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programacao.html">
+                            <i class="bi bi-calendar-week me-1"></i>Programação
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="locutores.html">
+                            <i class="bi bi-mic me-1"></i>Locutores
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="podcasts.html">
+                            <i class="bi bi-headphones me-1"></i>Podcasts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">
+                            <i class="bi bi-newspaper me-1"></i>Notícias
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">
+                            <i class="bi bi-chat-dots me-1"></i>Contato
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">
+                            <i class="bi bi-info-circle me-1"></i>Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="politica-privacidade.html">
+                            <i class="bi bi-shield-check me-1"></i>Privacidade
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light btn-sm me-2" type="button" data-bs-toggle="modal" data-bs-target="#playerModal">
+                        <i class="bi bi-play-circle me-1"></i>Ouvir Agora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Espaçamento para navbar fixa -->
+    <div style="height: 80px;"></div>
+
+    <!-- Hero Section Azul com Bootstrap -->
+    <div class="bg-primary text-white py-5 mb-5">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-light text-primary fs-6 mb-3">
+                        <i class="bi bi-people me-2"></i>NOSSA EQUIPE
+                    </span>
+                    <h1 class="display-4 fw-bold mb-3">Nossos Locutores</h1>
+                    <p class="lead mb-4">Conheça as vozes talentosas que fazem a magia acontecer na Rádio KAKAROTO. Cada um com seu estilo único!</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <span class="badge bg-light text-primary p-2">
+                            <i class="bi bi-mic me-1"></i>6 Locutores
+                        </span>
+                        <span class="badge bg-light text-primary p-2">
+                            <i class="bi bi-clock me-1"></i>24h no Ar
+                        </span>
+                        <span class="badge bg-light text-primary p-2">
+                            <i class="bi bi-heart me-1"></i>Pura Paixão
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" class="container-fluid py-5">
+        <div class="container">
+            <!-- Breadcrumb Bootstrap -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Locutores</li>
+                </ol>
+            </nav>
+
+            <!-- Cards dos Locutores com MUITO Bootstrap -->
+            <div class="row g-4 justify-content-center">
+                <!-- João Silva -->
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="card h-100 shadow-lg border-0">
+                        <div class="card-header bg-warning text-white text-center">
+                            <div class="position-relative">
+                                <span class="badge bg-light text-warning rounded-circle p-3 fs-2">
+                                    <i class="bi bi-person-circle"></i>
+                                </span>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                    <i class="bi bi-broadcast"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="fw-bold mb-2">João Silva</h5>
+                            <div class="mb-2">
+                                <span class="badge bg-warning text-dark">
+                                    <i class="bi bi-mic-fill me-1"></i>Bom Dia KAKAROTO
+                                </span>
+                            </div>
+                            <div class="mb-3">
+                                <small class="badge bg-light text-dark">
+                                    <i class="bi bi-clock me-1"></i>06h às 09h
+                                </small>
+                            </div>
+                            <p class="small text-muted flex-grow-1">Com seu carisma e alto astral, João comanda as manhãs, trazendo as notícias e a música que você ama.</p>
+                            <div class="mt-auto">
+                                <div class="btn-group w-100 mb-2" role="group">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-info btn-sm">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="progress mb-2" style="height: 6px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="bi bi-star-fill text-warning me-1"></i>Popularidade: 85%
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maria Santos -->
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="card h-100 shadow-lg border-0">
+                        <div class="card-header bg-info text-white text-center">
+                            <div class="position-relative">
+                                <span class="badge bg-light text-info rounded-circle p-3 fs-2">
+                                    <i class="bi bi-person-circle"></i>
+                                </span>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    <i class="bi bi-heart-fill"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="fw-bold mb-2">Maria Santos</h5>
+                            <div class="mb-2">
+                                <span class="badge bg-info text-white">
+                                    <i class="bi bi-mic-fill me-1"></i>Clássicos do Forró
+                                </span>
+                            </div>
+                            <div class="mb-3">
+                                <small class="badge bg-light text-dark">
+                                    <i class="bi bi-clock me-1"></i>09h às 12h
+                                </small>
+                            </div>
+                            <p class="small text-muted flex-grow-1">A voz suave que te leva numa viagem pelos grandes sucessos do forró. Pura nostalgia e alegria!</p>
+                            <div class="mt-auto">
+                                <div class="btn-group w-100 mb-2" role="group">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-success btn-sm">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </div>
+                                <div class="progress mb-2" style="height: 6px;">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="bi bi-star-fill text-warning me-1"></i>Popularidade: 92%
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pedro Costa -->
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="card h-100 shadow-lg border-0">
+                        <div class="card-header bg-success text-white text-center">
+                            <div class="position-relative">
+                                <span class="badge bg-light text-success rounded-circle p-3 fs-2">
+                                    <i class="bi bi-person-circle"></i>
+                                </span>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="fw-bold mb-2">Pedro Costa</h5>
+                            <div class="mb-2">
+                                <span class="badge bg-success text-white">
+                                    <i class="bi bi-mic-fill me-1"></i>Tarde de Sucessos
+                                </span>
+                            </div>
+                            <div class="mb-3">
+                                <small class="badge bg-light text-dark">
+                                    <i class="bi bi-clock me-1"></i>13h às 18h
+                                </small>
+                            </div>
+                            <p class="small text-muted flex-grow-1">Sua companhia perfeita para a tarde, com a melhor seleção musical e muita interação com os ouvintes.</p>
+                            <div class="mt-auto">
+                                <div class="btn-group w-100 mb-2" role="group">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-dark btn-sm">
+                                        <i class="bi bi-tiktok"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-danger btn-sm">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                </div>
+                                <div class="progress mb-2" style="height: 6px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="bi bi-star-fill text-warning me-1"></i>Popularidade: 78%
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ana Lima -->
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="card h-100 shadow-lg border-0">
+                        <div class="card-header bg-primary text-white text-center">
+                            <div class="position-relative">
+                                <span class="badge bg-light text-primary rounded-circle p-3 fs-2">
+                                    <i class="bi bi-person-circle"></i>
+                                </span>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                    <i class="bi bi-music-note-beamed"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="fw-bold mb-2">Ana Lima</h5>
+                            <div class="mb-2">
+                                <span class="badge bg-primary text-white">
+                                    <i class="bi bi-mic-fill me-1"></i>Noite Sertaneja
+                                </span>
+                            </div>
+                            <div class="mb-3">
+                                <small class="badge bg-light text-dark">
+                                    <i class="bi bi-clock me-1"></i>19h às 22h
+                                </small>
+                            </div>
+                            <p class="small text-muted flex-grow-1">A rainha do sertanejo na KAKAROTO, com as modas mais apaixonadas e os lançamentos do gênero.</p>
+                            <div class="mt-auto">
+                                <div class="btn-group w-100 mb-2" role="group">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-danger btn-sm">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                </div>
+                                <div class="progress mb-2" style="height: 6px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="bi bi-star-fill text-warning me-1"></i>Popularidade: 89%
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carlos Mendes -->
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="card h-100 shadow-lg border-0">
+                        <div class="card-header bg-secondary text-white text-center">
+                            <div class="position-relative">
+                                <span class="badge bg-light text-secondary rounded-circle p-3 fs-2">
+                                    <i class="bi bi-person-circle"></i>
+                                </span>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                    <i class="bi bi-cup-hot"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="fw-bold mb-2">Carlos Mendes</h5>
+                            <div class="mb-2">
+                                <span class="badge bg-secondary text-white">
+                                    <i class="bi bi-mic-fill me-1"></i>Feijoada com Samba
+                                </span>
+                            </div>
+                            <div class="mb-3">
+                                <small class="badge bg-light text-dark">
+                                    <i class="bi bi-clock me-1"></i>Sáb 12h-16h
+                                </small>
+                            </div>
+                            <p class="small text-muted flex-grow-1">Nos sábados, Carlos traz o melhor do samba e pagode para animar seu final de semana. É só alegria!</p>
+                            <div class="mt-auto">
+                                <div class="btn-group w-100 mb-2" role="group">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-danger btn-sm">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-warning btn-sm">
+                                        <i class="bi bi-soundwave"></i>
+                                    </a>
+                                </div>
+                                <div class="progress mb-2" style="height: 6px;">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 74%" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="bi bi-star-fill text-warning me-1"></i>Popularidade: 74%
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DJ Max -->
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="card h-100 shadow-lg border-0">
+                        <div class="card-header bg-dark text-white text-center">
+                            <div class="position-relative">
+                                <span class="badge bg-light text-dark rounded-circle p-3 fs-2">
+                                    <i class="bi bi-person-circle"></i>
+                                </span>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    <i class="bi bi-lightning-charge-fill"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="fw-bold mb-2">DJ Max</h5>
+                            <div class="mb-2">
+                                <span class="badge bg-dark text-white">
+                                    <i class="bi bi-mic-fill me-1"></i>Festa no KAKAROTO
+                                </span>
+                            </div>
+                            <div class="mb-3">
+                                <small class="badge bg-light text-dark">
+                                    <i class="bi bi-clock me-1"></i>Sáb 20h-00h
+                                </small>
+                            </div>
+                            <p class="small text-muted flex-grow-1">O DJ que agita suas noites de sábado com os hits mais bombados. A pista é na KAKAROTO!</p>
+                            <div class="mt-auto">
+                                <div class="btn-group w-100 mb-2" role="group">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-warning btn-sm">
+                                        <i class="bi bi-soundwave"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-dark btn-sm">
+                                        <i class="bi bi-tiktok"></i>
+                                    </a>
+                                </div>
+                                <div class="progress mb-2" style="height: 6px;">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 96%" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="bi bi-star-fill text-warning me-1"></i>Popularidade: 96%
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-5">
+                <div class="card border-0 bg-light shadow-sm">
+                    <div class="card-body p-5">
+                        <h4 class="fw-bold mb-3">
+                            <i class="bi bi-headset text-primary me-2"></i>Quer falar com nossos locutores?
+                        </h4>
+                        <p class="text-muted mb-4">Entre em contato durante os programas ao vivo ou mande uma mensagem!</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="contato.html" class="btn btn-primary btn-lg">
+                                <i class="bi bi-chat-dots me-2"></i>Fale Conosco
+                            </a>
+                            <a href="#" class="btn btn-success btn-lg">
+                                <i class="bi bi-whatsapp me-2"></i>WhatsApp
+                            </a>
+                            <button class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#playerModal">
+                                <i class="bi bi-play-circle me-2"></i>Ouvir Agora
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal do Player -->
+    <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="playerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="playerModalLabel">
+                        <i class="bi bi-broadcast me-2"></i>Player Rádio KAKAROTO
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="mb-4">
+                        <span class="badge bg-danger fs-6 mb-3">
+                            <i class="bi bi-circle-fill" style="font-size: 0.5rem;"></i>
+                            AO VIVO
+                        </span>
+                        <h4 class="fw-bold">Ouça Nossos Locutores</h4>
+                        <p class="text-muted">24 horas de programação com as melhores vozes</p>
+                    </div>
+                    <div class="d-flex justify-content-center gap-2 flex-wrap">
+                        <span class="badge bg-primary">Ao Vivo</span>
+                        <span class="badge bg-success">6 Locutores</span>
+                        <span class="badge bg-warning">24h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3">
+                        <i class="bi bi-broadcast me-2"></i>Rádio KAKAROTO
+                    </h6>
+                    <p class="small">Nossos locutores são a alma da rádio. Conheça cada um!</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3">Redes Sociais</h6>
+                    <div class="btn-group" role="group">
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <small>&copy; 2025 Rádio KAKAROTO. Todos os direitos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

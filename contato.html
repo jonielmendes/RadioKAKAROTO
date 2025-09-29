@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Rádio KAKAROTO</title>
+    <meta name="description" content="Entre em contato com a Rádio KAKAROTO. Estamos sempre prontos para ouvir você!">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Skip Link para Acessibilidade -->
+    <a href="#main-content" class="skip-link visually-hidden-focusable btn btn-primary position-absolute top-0 start-0 m-3">Pular para o conteúdo</a>
+
+    <!-- Navbar Bootstrap Completa -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+                <span class="badge bg-light text-primary rounded-circle p-2 me-2">
+                    <i class="bi bi-broadcast fs-5"></i>
+                </span>
+                KAKAROTO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-fill me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programacao.html">
+                            <i class="bi bi-calendar-week me-1"></i>Programação
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="locutores.html">
+                            <i class="bi bi-mic me-1"></i>Locutores
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="podcasts.html">
+                            <i class="bi bi-headphones me-1"></i>Podcasts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">
+                            <i class="bi bi-newspaper me-1"></i>Notícias
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contato.html">
+                            <i class="bi bi-chat-dots me-1"></i>Contato
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">
+                            <i class="bi bi-info-circle me-1"></i>Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="politica-privacidade.html">
+                            <i class="bi bi-shield-check me-1"></i>Privacidade
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light btn-sm me-2" type="button" data-bs-toggle="modal" data-bs-target="#playerModal">
+                        <i class="bi bi-play-circle me-1"></i>Ouvir Agora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Espaçamento para navbar fixa -->
+    <div style="height: 80px;"></div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="container-fluid py-5">
+        <!-- Breadcrumb Bootstrap -->
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contato</li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Hero Section com Bootstrap -->
+        <div class="bg-primary text-white py-5 mb-5">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <span class="badge bg-light text-primary fs-6 mb-3">
+                            <i class="bi bi-chat-square-dots me-2"></i>FALE CONOSCO
+                        </span>
+                        <h1 class="display-4 fw-bold mb-3">Entre em Contato</h1>
+                        <p class="lead mb-4">Estamos sempre prontos para ouvir você! Sua opinião, sugestão ou crítica é muito importante para nós.</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <span class="badge bg-light text-primary p-2">
+                                <i class="bi bi-telephone me-1"></i>24h de Atendimento
+                            </span>
+                            <span class="badge bg-light text-primary p-2">
+                                <i class="bi bi-reply me-1"></i>Resposta Rápida
+                            </span>
+                            <span class="badge bg-light text-primary p-2">
+                                <i class="bi bi-shield-check me-1"></i>100% Seguro
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row g-5">
+                <!-- Formulário de Contato com Bootstrap -->
+                <div class="col-lg-8">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="card-title mb-0">
+                                <i class="bi bi-envelope-paper me-2"></i>Envie sua Mensagem
+                            </h4>
+                        </div>
+                        <div class="card-body p-4">
+                            <!-- Alertas Bootstrap -->
+                            <div class="alert alert-info d-flex align-items-center" role="alert">
+                                <i class="bi bi-info-circle-fill me-2"></i>
+                                <div>
+                                    Preencha todos os campos obrigatórios (*) para enviar sua mensagem.
+                                </div>
+                            </div>
+
+                            <form action="mailto:equipe-ti@radiokakarotinho.com" method="post" enctype="text/plain" novalidate>
+                                <!-- Input Groups Bootstrap -->
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="nome" class="form-label fw-semibold">
+                                            <i class="bi bi-person-fill text-primary me-1"></i>Nome Completo *
+                                        </label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                            <input type="text" class="form-control" id="nome" name="Nome" placeholder="Seu nome completo" required>
+                                            <div class="invalid-feedback">
+                                                Por favor, informe seu nome.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label fw-semibold">
+                                            <i class="bi bi-envelope-fill text-primary me-1"></i>E-mail *
+                                        </label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text"><i class="bi bi-at"></i></span>
+                                            <input type="email" class="form-control" id="email" name="Email" placeholder="seu@email.com" required>
+                                            <div class="invalid-feedback">
+                                                Por favor, informe um e-mail válido.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="telefone" class="form-label fw-semibold">
+                                            <i class="bi bi-telephone-fill text-primary me-1"></i>Telefone
+                                        </label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-phone"></i></span>
+                                            <input type="tel" class="form-control" id="telefone" name="Telefone" placeholder="(89) 90000-0000">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="assunto" class="form-label fw-semibold">
+                                            <i class="bi bi-tag-fill text-primary me-1"></i>Assunto
+                                        </label>
+                                        <select class="form-select" id="assunto" name="Assunto">
+                                            <option value="">Selecione um assunto</option>
+                                            <optgroup label="Programação">
+                                                <option value="Sugestão Musical">🎵 Sugestão Musical</option>
+                                                <option value="Participação">🎤 Participação em Programa</option>
+                                            </optgroup>
+                                            <optgroup label="Feedback">
+                                                <option value="Elogio">👏 Elogio</option>
+                                                <option value="Reclamação">😞 Reclamação</option>
+                                                <option value="Sugestão">💡 Sugestão</option>
+                                            </optgroup>
+                                            <optgroup label="Comercial">
+                                                <option value="Publicidade">📢 Publicidade</option>
+                                                <option value="Parceria">🤝 Parceria</option>
+                                            </optgroup>
+                                            <option value="Outros">📝 Outros</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="mensagem" class="form-label fw-semibold">
+                                        <i class="bi bi-chat-text-fill text-primary me-1"></i>Mensagem *
+                                    </label>
+                                    <textarea class="form-control" id="mensagem" name="Mensagem" rows="6" 
+                                              placeholder="Conte-nos o que você pensa, suas sugestões, críticas, elogios ou qualquer coisa que queira compartilhar conosco..." 
+                                              required></textarea>
+                                    <div class="form-text">
+                                        <i class="bi bi-info-circle me-1"></i>Mínimo de 10 caracteres
+                                    </div>
+                                </div>
+
+                                <!-- Switches Bootstrap -->
+                                <div class="mb-4">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            <i class="bi bi-envelope me-1"></i>Quero receber novidades por e-mail
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="whatsapp">
+                                        <label class="form-check-label" for="whatsapp">
+                                            <i class="bi bi-whatsapp me-1"></i>Aceito receber contato via WhatsApp
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Button Group Bootstrap -->
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="reset" class="btn btn-outline-secondary me-md-2">
+                                        <i class="bi bi-arrow-clockwise me-2"></i>Limpar Formulário
+                                    </button>
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-send-fill me-2"></i>Enviar Mensagem
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar com Informações -->
+                <div class="col-lg-4">
+                    <!-- Card de Contato Rápido -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-lightning-charge me-2"></i>Contato Rápido
+                            </h5>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex align-items-center">
+                                <span class="badge bg-success rounded-pill me-3">
+                                    <i class="bi bi-whatsapp"></i>
+                                </span>
+                                <div>
+                                    <h6 class="mb-1">WhatsApp</h6>
+                                    <p class="mb-0 text-muted small">(89) 99999-8888</p>
+                                    <small class="text-success">Online agora</small>
+                                </div>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center">
+                                <span class="badge bg-primary rounded-pill me-3">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </span>
+                                <div>
+                                    <h6 class="mb-1">Telefone</h6>
+                                    <p class="mb-0 text-muted small">(89) 3571-2345</p>
+                                    <small class="text-muted">Seg-Sex: 8h às 18h</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Bootstrap -->
+                    <div class="accordion mb-4" id="accordionFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi bi-question-circle me-2"></i>Como fazer pedidos musicais?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    <small>Use nosso WhatsApp durante os programas ao vivo ou envie pelo formulário com o assunto "Sugestão Musical".</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="bi bi-clock me-2"></i>Qual o horário de atendimento?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    <small>Nossa programação é 24h, mas o atendimento comercial é de segunda a sexta, das 8h às 18h.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar Bootstrap -->
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <i class="bi bi-graph-up me-2"></i>Nossos Números
+                            </h6>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <small>Satisfação dos Ouvintes</small>
+                                    <small>96%</small>
+                                </div>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-success" style="width: 96%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <small>Tempo de Resposta</small>
+                                    <small>85%</small>
+                                </div>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-info" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-0">
+                                <div class="d-flex justify-content-between">
+                                    <small>Alcance Regional</small>
+                                    <small>78%</small>
+                                </div>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-warning" style="width: 78%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal do Player -->
+    <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="playerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="playerModalLabel">
+                        <i class="bi bi-broadcast me-2"></i>Player Rádio KAKAROTO
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="mb-4">
+                        <span class="badge bg-danger fs-6 mb-3">
+                            <i class="bi bi-circle-fill" style="font-size: 0.5rem;"></i>
+                            AO VIVO
+                        </span>
+                        <h4 class="fw-bold">Fale Conosco Enquanto Ouve</h4>
+                        <p class="text-muted">Envie suas mensagens em tempo real</p>
+                    </div>
+                    <div class="d-flex justify-content-center gap-2 flex-wrap">
+                        <span class="badge bg-primary">Contato</span>
+                        <span class="badge bg-success">WhatsApp</span>
+                        <span class="badge bg-warning">24h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer com mais Bootstrap -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3">
+                        <i class="bi bi-broadcast me-2"></i>Rádio KAKAROTO
+                    </h6>
+                    <p class="small">Sua rádio, sua música, sua vida. 24 horas no ar levando o melhor da música para Corrente-PI e região.</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3">Redes Sociais</h6>
+                    <div class="btn-group" role="group">
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <small>&copy; 2025 Rádio KAKAROTO. Todos os direitos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
